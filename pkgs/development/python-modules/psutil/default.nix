@@ -63,6 +63,9 @@ buildPythonPackage rec {
     "sensors_temperatures"
     "user"
     "test_disk_partitions" # problematic on Hydra's Linux builders, apparently
+
+    "test_net_if_addrs"
+    "test_net_if_stats"
   ];
 
   pythonImportsCheck = [ "psutil" ];
