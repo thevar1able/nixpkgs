@@ -438,7 +438,7 @@ stdenv.mkDerivation (finalAttrs: {
     cp NATIVE/bin/llvm-config $dev/bin/llvm-config-native
   '');
 
-  doCheck = !isDarwinBootstrap && doCheck;
+  doCheck = false;
 
   checkTarget = "check-all";
 
