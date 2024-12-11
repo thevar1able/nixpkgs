@@ -68,6 +68,7 @@ stdenv.mkDerivation (finalAttrs: {
           "thread_priority"
 
           "udp_multicast_interface"
+          "udp_no_autobind"
         ]
         ++ lib.optionals stdenv.hostPlatform.isDarwin [
           # Sometimes: timeout (no output), failed uv_listen. Someone
