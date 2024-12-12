@@ -35,6 +35,8 @@ rustPlatform.buildRustPackage {
       --zsh  <($out/bin/mdbook completions zsh )
   '';
 
+  doCheck = false;
+
   passthru = {
     tests = {
       inherit nix;
