@@ -24,8 +24,8 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "zeromq";
     repo = "libzmq";
-    rev = "v${finalAttrs.version}";
-    hash = "sha256-q2h5y0Asad+fGB9haO4Vg7a1ffO2JSb7czzlhmT3VmI=";
+    rev = "master";
+    hash = lib.fakeSha256;
   };
 
   nativeBuildInputs = [
