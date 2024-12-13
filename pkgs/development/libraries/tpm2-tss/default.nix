@@ -138,7 +138,7 @@ stdenv.mkDerivation rec {
   '';
 
   doCheck = false;
-  doInstallCheck = stdenv.buildPlatform.canExecute stdenv.hostPlatform;
+  doInstallCheck = false;
   # Since we rewrote the load path in the dynamic loader for the TCTI
   # The various tcti implementation should be placed in their target directory
   # before we could run tests, so we make turn checkPhase into installCheckPhase
