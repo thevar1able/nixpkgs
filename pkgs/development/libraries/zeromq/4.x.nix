@@ -70,8 +70,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   postInstall = ''
     # Install manually created man pages
-    install -vDm644 -t "$out/share/man/man3" ../doc/*.3
-    install -vDm644 -t "$out/share/man/man7" ../doc/*.7
+    # install -vDm644 -t "$out/share/man/man3" ../doc/*.3
+    # install -vDm644 -t "$out/share/man/man7" ../doc/*.7
   '';
 
   passthru.tests = {
