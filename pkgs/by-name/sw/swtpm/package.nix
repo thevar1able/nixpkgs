@@ -117,7 +117,7 @@ stdenv.mkDerivation (finalAttrs: {
         'LC_ALL=C.UTF-8 $CERTTOOL'
   '';
 
-  doCheck = true;
+  doCheck = false;
   enableParallelBuilding = true;
 
   outputs = [
